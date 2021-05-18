@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>University</title>
+</head>
+
+<body>
+
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times-circle" onClick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onClick="showMenu()"></i>
+    </nav>
+<h2>Contact Us</h2>
+</section>
+<hr>
+
+<!--footer-->
+
+<section class="footer">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, doloremque dolores excepturi mollitia natus nostrum placeat porro rem veritatis? Corporis deserunt dolorum fugiat laborum necessitatibus!</p>
+     <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin"></i>
+     </div>
+    <p>Made with <i class="fa fa-heart-o"></i>Google tutorial</p>
+</section>
+
+<!--contact Us-->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14408.564689334275!2d81.8594275!3d25.4669611!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x702ad223256eaf4d!2sUniversity%20of%20Allahabad!5e0!3m2!1sen!2sin!4v1621363094999!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XYZ road, ABC building</h5>
+                    <p>Allahabad, India</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 56482456423</h5>
+                    <p>Monday to Saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>uni@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="ENTER YOUR NAME" required>
+                <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                <input type="text" placeholder="ENTER YOUR SUBJECT" required>
+                <textarea rows="8" placeholder="YOUR QUERY"></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<!--Javascript for Toggle menu-->
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu() {
+        navLinks.style.right="-200px";
+    }
+
+</script>
+</body>
+</html>
